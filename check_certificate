@@ -131,8 +131,8 @@ executionFlow(){
 	if [[ $EXPIRATIONDATE == "none" ]]; then
 		exitFunc "Unable to fetch certificate's expiration date to the site $SITE 1"
 	fi
-	EXPIRATIONMINUS15=$(echo "${EXPIRATIONTOSEC}-${WARNINGTOSEC}" | bc)
-	EXPIRATIONMINUS30=$(echo "${EXPIRATIONTOSEC}-${CRITICALTOSEC}" | bc)
+	EXPIRATIONMINUS30=$(echo "${EXPIRATIONTOSEC}-${WARNINGTOSEC}" | bc)
+	EXPIRATIONMINUS15=$(echo "${EXPIRATIONTOSEC}-${CRITICALTOSEC}" | bc)
 	statusGenerate $EXPIRATIONMINUS15 $EXPIRATIONMINUS30
 	if [[ $RETURNCODE == "0" ]]; then
 		RETURNOUTPUT="OK"

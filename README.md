@@ -6,7 +6,8 @@ Simple 'SSL Certificate Expiration' check for Nagios / Icinga
 Changelog
 --------------------------------------------------------------------------------
 
-[2019/11/26] - v1 - First Release
+[2019/11/26] - v1   - First Release
+[2019/12/09] - v1.1 - Bug Fix
 
 How to Use
 --------------------------------------------------------------------------------
